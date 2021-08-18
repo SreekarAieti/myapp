@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webapp
+  name: app-d
 spec:
   selector:
     matchLabels:
-      app: webapp
+      app: webapapp-d
   template:
     metadata:
       labels:
-        app: webapp
+        app: app-d
     spec:
       containers:
-      - name: webapp
-        image: avinash200016/todo-app
+      - name: app-d
+        image: 939874/myfirst_docker_repo:tagname
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: 3000
+        - containerPort: 3100
