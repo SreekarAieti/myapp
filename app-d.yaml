@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: webapapp-d
+      app: app-d
   template:
     metadata:
       labels:
