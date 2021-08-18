@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: app-d
-        image: 939874/myfirst_docker_repo:tagname
+        image: ubuntu:latest
         resources:
           limits:
             memory: "128Mi"
